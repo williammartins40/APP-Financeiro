@@ -186,10 +186,9 @@ function TotalAmortizacao()
 {
 	var capital = document.calcformPrice.capital.value;
 	var dinheiro = parseFloat(capital);
-	var saldodevedor = SaldoDevedorT();
+	var saldodevedor = SaldoDevedorT1();
 	var amortizacaototal = (dinheiro-saldodevedor).toFixed(2);
-	document.calcformPrice.amortizacaott.value = amortizacaototal;	
-	
+	document.calcformPrice.amortizacaott.value = amortizacaototal;
 }
 function JurosAcumulado()
 {
@@ -209,7 +208,6 @@ function JurosAcumulado()
 
 function AmortizacaoEmTK()
 {
-	
 	var parcela = ValorParcela();
 	var fvat = FVAT();
 	var fvatk = FVATK();
